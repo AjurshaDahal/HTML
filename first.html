@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="first.html">Book<span>Store</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                
+                <ul class = "primary nav">
+               
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a> </li>
+                </ul>
+
+                <ul class="secondary nav">
+                    <li><a href="#">Contact</a></li>
+                    <li class ="go-premium-cta"><a href="#">Go Premium</a></li>
+                   
+                    </ul>
+            </nav>
+        </div>
+    </div> 
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead" >the art of reading</p>
+                <h1> A BookStore app with vintage books.</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Audio Books</a>
+                    <a href="#" class="watch-video-cta"><img src="#" alt="Load a video"> Watch a video</a>
+
+                </div>
+
+            </div>
+            <img src="#" class="hero-img" alt="Illustration">
+        </div>
+
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Best seller</li>
+                <li>Self Help </li>
+                <li>Fiction</li>
+                <li>Non-Fiction</li>
+                <li>Mystery Book</li>
+            </ul>
+
+            <img src="#" alt="Holding a book">
+
+        </div>
+
+    </section>
+
+    <section class="testimonial-section">
+        <div class="container">
+            <ul>
+                <li> <img src="#" alt="person image" class="profile-img">
+                <blockquote>"hi hello bye"</blockquote>
+             <cite> Aju</cite></li>
+
+                <li><img src="#" alt="person image">
+                <blockquote>"hi hello bye"</blockquote>
+             <cite> Aju</cite></li>
+
+                <li><img src="#" alt="person image">
+                <blockquote>"hi hello bye"</blockquote>
+             <cite> Aju</cite></li>
+             
+            </ul>
+        </div>
+    </section>
+
+    <section class="conatct-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                    <form action="">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name">
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email">
+
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Type here!"></textarea>
+
+                        <input type="submit" class="send-message-cta" value="send message">
+
+
+                    </form>
+                
+            </div>
+            <div class="contact-right"></div>
+
+        </div>
+    </section>
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta');
+        const nav = document.querySelector('nav');
+        const mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click',()=>{
+            nav.classList.add('menu.btn');
+
+        });
+
+        mobileBtnExit.addEventListener('click',() => {
+            nav.classlist.remove('menu-btn');
+        });
+    </script>
+
+
+
+</body>
+</html>
